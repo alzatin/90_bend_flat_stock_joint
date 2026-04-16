@@ -578,14 +578,14 @@
     },
     {
       "atomType": "Fusion",
-      "x": 0.67400162999185,
-      "y": 0.6371951219512195,
+      "x": 0.6756316218418907,
+      "y": 0.673780487804878,
       "uniqueID": "id-12253",
       "ioValues": [
         {
           "name": "Shape 2",
           "ioValue": {
-            "geometry": "move-rotate-rectangle-0.75-2-0-0-90--1-2.5-0",
+            "geometry": "move-rotate-rectangle-0.75-2-0-0-90--1.3333333333333333-2.5-0",
             "dimension": "2D",
             "plane": {
               "origin": [
@@ -612,7 +612,7 @@
         {
           "name": "Shape 3",
           "ioValue": {
-            "geometry": "move-rotate-rectangle-0.75-2-0-0-0-2.5--1-0",
+            "geometry": "move-rotate-rectangle-0.75-2-0-0-0-2.6--1.3333333333333333-0",
             "dimension": "2D",
             "plane": {
               "origin": [
@@ -641,8 +641,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.23227383863080686,
-      "y": 0.649390243902439,
+      "x": 0.23716381418092908,
+      "y": 0.6371951219512195,
       "uniqueID": "id-12254",
       "ioValues": [
         {
@@ -659,8 +659,8 @@
     },
     {
       "atomType": "Rotate",
-      "x": 0.40668296658516706,
-      "y": 0.43902439024390244,
+      "x": 0.4091279543602282,
+      "y": 0.43597560975609756,
       "uniqueID": "id-12255",
       "ioValues": [
         {
@@ -683,8 +683,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.5737571312143439,
-      "y": 0.45121951219512196,
+      "x": 0.5745721271393643,
+      "y": 0.45426829268292684,
       "uniqueID": "id-12256",
       "ioValues": [
         {
@@ -693,8 +693,8 @@
         },
         {
           "name": "xDist",
-          "ioValue": -1,
-          "currentEquation": "-Wing_width/2"
+          "ioValue": -1.3333333333333333,
+          "currentEquation": "-Wing_width/1.5"
         },
         {
           "name": "yDist",
@@ -709,8 +709,8 @@
     },
     {
       "atomType": "Rotate",
-      "x": 0.39771801140994295,
-      "y": 0.801829268292683,
+      "x": 0.3960880195599022,
+      "y": 0.7926829268292683,
       "uniqueID": "id-12257",
       "ioValues": [
         {
@@ -733,8 +733,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.5460472697636511,
-      "y": 0.6890243902439024,
+      "x": 0.5476772616136919,
+      "y": 0.7042682926829268,
       "uniqueID": "id-12258",
       "ioValues": [
         {
@@ -743,13 +743,13 @@
         },
         {
           "name": "xDist",
-          "ioValue": 2.5,
-          "currentEquation": "Interior_radius + Wood_thickness/1.5"
+          "ioValue": 2.6,
+          "currentEquation": "Interior_radius + Wood_thickness/1.25"
         },
         {
           "name": "yDist",
-          "ioValue": -1,
-          "currentEquation": "-Wing_width/2"
+          "ioValue": -1.3333333333333333,
+          "currentEquation": "-Wing_width/1.5"
         },
         {
           "name": "zDist",
@@ -759,8 +759,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.7840260798696007,
-      "y": 0.2652439024390244,
+      "x": 0.7897310513447433,
+      "y": 0.2621951219512195,
       "uniqueID": "id-12286",
       "ioValues": [
         {
@@ -775,8 +775,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.7669111654441728,
-      "y": 0.7134146341463415,
+      "x": 0.7783211083944581,
+      "y": 0.7103658536585366,
       "uniqueID": "id-12290",
       "ioValues": [
         {
