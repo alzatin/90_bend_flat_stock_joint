@@ -1,13 +1,330 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-12075",
-    "name": "90_bend_flat_stock_joint",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "Inches",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-12075",
+  "name": "90_bend_flat_stock_joint",
+  "ioValues": [
+    {
+      "name": "Interior_radius",
+      "ioValue": 2,
+      "currentEquation": "2"
+    },
+    {
+      "name": "Wood_thickness",
+      "ioValue": 0.75,
+      "currentEquation": ".75"
+    }
+  ],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-12076",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.33170334148329256,
+      "y": 0.46341463414634143,
+      "uniqueID": "id-12085",
+      "name": "Concentric_Circles",
+      "ioValues": [
+        {
+          "name": "OD",
+          "ioValue": 2.75,
+          "currentEquation": "Interior_radius + Wood_thickness"
+        },
+        {
+          "name": "ID",
+          "ioValue": 2,
+          "currentEquation": "Interior_radius"
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-12079",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-12080",
+          "name": "OD",
+          "type": "number"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.24615384615384617,
+          "uniqueID": "id-12081",
+          "name": "ID",
+          "type": "number"
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.460559796437659,
+          "y": 0.42567567567567566,
+          "uniqueID": "id-12082",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 2.75
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.44529262086514,
+          "y": 0.7263513513513513,
+          "uniqueID": "id-12083",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 2
+            }
+          ]
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.6615776081424937,
+          "y": 0.5506756756756757,
+          "uniqueID": "id-12084",
+          "ioValues": [
+            {
+              "name": "geometry1",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "geometry2",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "diameter",
+          "ap1ID": "id-12080",
+          "ap2ID": "id-12082"
+        },
+        {
+          "ap2Name": "diameter",
+          "ap1ID": "id-12081",
+          "ap2ID": "id-12083"
+        },
+        {
+          "ap2Name": "geometry1",
+          "ap1ID": "id-12082",
+          "ap2ID": "id-12084"
+        },
+        {
+          "ap2Name": "geometry2",
+          "ap1ID": "id-12083",
+          "ap2ID": "id-12084"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-12084",
+          "ap2ID": "id-12079"
+        }
+      ],
+      "parentRepo": {
+        "lastFoundGit": "2026-04-16T18:23:39.127Z",
+        "privateRepo": false,
+        "repoName": "Concentric_Circles",
+        "dateCreated": "2025-11-08T04:08:14Z",
+        "likes": 0,
+        "readMe": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/README.md?sanitize=true",
+        "yyyy": 2025,
+        "topMoleculeID": "id-1170",
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/BarbourSmith/Concentric_Circles",
+        "topics": [],
+        "parentRepo": null,
+        "forks": 0,
+        "dateModified": "739563",
+        "ranking": 15.6,
+        "searchField": "concentric_circles barboursmith creates two concentric circles. the result is 2d ",
+        "owner": "BarbourSmith",
+        "description": "Creates two concentric circles. The result is 2D",
+        "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Concentric_Circles/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "Unitless",
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.3105134474327628,
+      "y": 0.8292682926829269,
+      "uniqueID": "id-12101",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 20
+        },
+        {
+          "name": "y length",
+          "ioValue": 20,
+          "currentEquation": "20"
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.48247758761206194,
+      "y": 0.7530487804878048,
+      "uniqueID": "id-12105",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 10
+        },
+        {
+          "name": "yDist",
+          "ioValue": 10,
+          "currentEquation": "10"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Intersection",
+      "x": 0.5721271393643031,
+      "y": 0.5,
+      "uniqueID": "id-12111",
+      "ioValues": [
+        {
+          "name": "geometry1",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "geometry2",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Fusion",
+      "x": 0.6495517522412387,
+      "y": 0.5914634146341463,
+      "uniqueID": "id-12115",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": {
+            "geometry": "intersect-move-rectangle-20-20-10-10-0-cut-circle-1.375-circle-1",
+            "tags": [],
+            "color": "#aad7f2",
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "bom": [],
+            "dimension": "2D"
+          }
+        }
+      ],
+      "unionType": "Fusion"
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.7660961695191524,
+      "y": 0.6036585365853658,
+      "uniqueID": "id-12119",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.4024390243902439,
+      "uniqueID": "id-12123",
+      "name": "Interior_radius"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.49474671669793624,
+      "uniqueID": "id-12126",
+      "name": "Wood_thickness"
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry2",
+      "ap1ID": "id-12085",
+      "ap2ID": "id-12111"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-12101",
+      "ap2ID": "id-12105"
+    },
+    {
+      "ap2Name": "geometry1",
+      "ap1ID": "id-12105",
+      "ap2ID": "id-12111"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-12111",
+      "ap2ID": "id-12115"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-12115",
+      "ap2ID": "id-12119"
+    }
+  ],
+  "unitsKey": "Inches",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
