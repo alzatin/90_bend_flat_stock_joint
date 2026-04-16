@@ -14,6 +14,11 @@
       "name": "Wood_thickness",
       "ioValue": 0.75,
       "currentEquation": ".75"
+    },
+    {
+      "name": "Wing_width",
+      "ioValue": 1,
+      "currentEquation": "1"
     }
   ],
   "topLevel": true,
@@ -32,20 +37,20 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.33170334148329256,
-      "y": 0.46341463414634143,
+      "x": 0.2241238793806031,
+      "y": 0.6615853658536586,
       "uniqueID": "id-12085",
       "name": "Concentric_Circles",
       "ioValues": [
         {
           "name": "OD",
-          "ioValue": 2.75,
-          "currentEquation": "Interior_radius + Wood_thickness"
+          "ioValue": 5.5,
+          "currentEquation": "(Interior_radius + Wood_thickness)*2"
         },
         {
           "name": "ID",
-          "ioValue": 2,
-          "currentEquation": "Interior_radius"
+          "ioValue": 4,
+          "currentEquation": "Interior_radius *2"
         }
       ],
       "topLevel": false,
@@ -86,7 +91,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 2.75
+              "ioValue": 5.5
             }
           ]
         },
@@ -98,7 +103,7 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 2
+              "ioValue": 4
             }
           ]
         },
@@ -216,8 +221,8 @@
     },
     {
       "atomType": "Intersection",
-      "x": 0.5721271393643031,
-      "y": 0.5,
+      "x": 0.5680521597392013,
+      "y": 0.5853658536585367,
       "uniqueID": "id-12111",
       "ioValues": [
         {
@@ -232,14 +237,14 @@
     },
     {
       "atomType": "Fusion",
-      "x": 0.6495517522412387,
-      "y": 0.5914634146341463,
+      "x": 0.6878565607171964,
+      "y": 0.41158536585365857,
       "uniqueID": "id-12115",
       "ioValues": [
         {
           "name": "Shape 1",
           "ioValue": {
-            "geometry": "intersect-move-rectangle-20-20-10-10-0-cut-circle-1.375-circle-1",
+            "geometry": "intersect-move-rectangle-20-20-10-10-0-cut-circle-2.75-circle-2",
             "tags": [],
             "color": "#aad7f2",
             "plane": {
@@ -262,14 +267,68 @@
             "bom": [],
             "dimension": "2D"
           }
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": {
+            "geometry": "move-rotate-rectangle-0.75-1-0-0-90--0.5-2.375-0",
+            "dimension": "2D",
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "tags": [],
+            "bom": []
+          }
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": {
+            "geometry": "move-rotate-rectangle-0.75-1-0-0-0-2.375--0.5-0",
+            "dimension": "2D",
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "tags": [],
+            "bom": []
+          }
         }
       ],
       "unionType": "Fusion"
     },
     {
       "atomType": "Extrude",
-      "x": 0.7660961695191524,
-      "y": 0.6036585365853658,
+      "x": 0.7726161369193154,
+      "y": 0.6341463414634146,
       "uniqueID": "id-12119",
       "ioValues": [
         {
@@ -295,6 +354,135 @@
       "y": 0.49474671669793624,
       "uniqueID": "id-12126",
       "name": "Wood_thickness"
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.2469437652811736,
+      "y": 0.3384146341463415,
+      "uniqueID": "id-12129",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 0.75,
+          "currentEquation": "Wood_thickness"
+        },
+        {
+          "name": "y length",
+          "ioValue": 1,
+          "currentEquation": "Wing_width"
+        }
+      ]
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.3952730236348818,
+      "y": 0.20731707317073172,
+      "uniqueID": "id-12133",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 90,
+          "currentEquation": "90"
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.5411572942135289,
+      "y": 0.17073170731707318,
+      "uniqueID": "id-12139",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": -0.5,
+          "currentEquation": "-Wing_width/2"
+        },
+        {
+          "name": "yDist",
+          "ioValue": 2.375,
+          "currentEquation": "Interior_radius + Wood_thickness/2"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.5870544090056286,
+      "uniqueID": "id-12146",
+      "name": "Wing_width"
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.3732681336593317,
+      "y": 0.38109756097560976,
+      "uniqueID": "id-12149",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 0,
+          "currentEquation": "0"
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.4963325183374083,
+      "y": 0.399390243902439,
+      "uniqueID": "id-12150",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 2.375,
+          "currentEquation": "Interior_radius + Wood_thickness/2"
+        },
+        {
+          "name": "yDist",
+          "ioValue": -0.5,
+          "currentEquation": "-Wing_width/2"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -322,6 +510,36 @@
       "ap2Name": "geometry",
       "ap1ID": "id-12115",
       "ap2ID": "id-12119"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-12129",
+      "ap2ID": "id-12133"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-12129",
+      "ap2ID": "id-12149"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-12133",
+      "ap2ID": "id-12139"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-12139",
+      "ap2ID": "id-12115"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-12149",
+      "ap2ID": "id-12150"
+    },
+    {
+      "ap2Name": "Shape 3",
+      "ap1ID": "id-12150",
+      "ap2ID": "id-12115"
     }
   ],
   "unitsKey": "Inches",

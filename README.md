@@ -8,6 +8,7 @@
 
 - **Interior_radius** (number)
 - **Wood_thickness** (number)
+- **Wing_width** (number)
 
 
 
